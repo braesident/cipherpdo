@@ -1,0 +1,28 @@
+{
+  "name": "braesident/cipherpdo",
+  "description": "PDO-Erweiterung mit feldweiser Verschlüsselung und erweiterten Statements.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://exunova.de",
+  "authors": [
+    {
+      "name": "Sebastian Braesicke"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "@php tests/run.php"
+  },
+  "require": {
+    "php": ">=8.0",
+    "ext-pdo": "*",
+    "braesident/blowfish": "^1.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Braesident\\CipherPDO\\": "src/"
+    }
+  }
+}
